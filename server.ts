@@ -7,7 +7,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 app.use(express.json({ limit: "10mb" }));
 
@@ -116,8 +116,9 @@ function getGeminiClient(): GoogleGenAI {
 app.get("/api/health", (_req: Request, res: Response) => {
   res.json({
     status: "ok",
+    service: "Athenology Educational AI",
     hasApiKey: Boolean(process.env.GEMINI_API_KEY),
-    name: "Athenology API"
+    timestamp: new Date().toISOString()
   });
 });
 
