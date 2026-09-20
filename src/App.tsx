@@ -21,9 +21,9 @@ import { ApiIntegrationModal } from "./components/ApiIntegrationModal";
 const INITIAL_WELCOME_MESSAGE: Message = {
   id: "welcome-1",
   role: "assistant",
-  content: `### Welcome to Athenology
+  content: `### Welcome to Memory Link
 
-I am **Athenology**, an educational AI dedicated to **Social Psychology and Cognitive Psychology**, with a specific focus on the psychological consequences of living in a digital, algorithm-driven social media environment.
+I am **Memory Link**, an educational AI dedicated to **Social Psychology and Cognitive Psychology**, with a specific focus on the psychological consequences of living in a digital, algorithm-driven social media environment.
 
 Our central question is:
 > *"What are the psychological consequences of living in a digital, algorithm-driven social media environment?"*
@@ -368,7 +368,7 @@ export default function App() {
         {/* Minimal Educational Footer */}
         <footer className="text-center py-2 text-[11px] text-stone-600 border-t border-stone-200/80">
           <p>
-            Athenology is an educational generative AI exploring social and cognitive psychology. Not clinical advice. In mental health crisis, dial or text <strong>988</strong> (USA & Canada).
+            Memory Link is an educational generative AI exploring social and cognitive psychology. Not clinical advice. In mental health crisis, dial or text <strong>988</strong> (USA & Canada).
           </p>
         </footer>
       </main>

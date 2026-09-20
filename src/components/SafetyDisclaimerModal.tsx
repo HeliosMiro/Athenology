@@ -25,7 +25,7 @@ export function SafetyDisclaimerModal({ isOpen, onClose }: SafetyDisclaimerModal
                 Psychological Safety & Ethical Scope
               </h2>
               <p className="text-xs text-stone-600">
-                Guiding principles and boundaries of the Athenology educational system
+                Guiding principles and boundaries of the Memory Link educational system
               </p>
             </div>
           </div>
@@ -47,7 +47,7 @@ export function SafetyDisclaimerModal({ isOpen, onClose }: SafetyDisclaimerModal
               Educational Purpose & Core Philosophy
             </h3>
             <p className="mt-1.5 text-stone-700">
-              Athenology is designed to help college students, young people, and the public explore the scientific intersections of <strong>social psychology</strong> and <strong>cognitive psychology</strong> within algorithm-driven digital platforms. Athenology’s goal is to help users understand psychology, not tell users what they should believe.
+              Memory Link is designed to help college students, young people, and the public explore the scientific intersections of <strong>social psychology</strong> and <strong>cognitive psychology</strong> within algorithm-driven digital platforms. Memory Link’s goal is to help users understand psychology, not tell users what they should believe.
             </p>
           </div>
 
@@ -57,16 +57,16 @@ export function SafetyDisclaimerModal({ isOpen, onClose }: SafetyDisclaimerModal
               Not a Substitute for Clinical Care or Diagnosis
             </h3>
             <ul className="mt-1.5 list-disc list-inside space-y-1 text-red-900 text-xs">
-              <li><strong>Athenology does NOT diagnose mental disorders.</strong></li>
-              <li><strong>Athenology does NOT claim that any user has a psychological condition.</strong></li>
-              <li><strong>Athenology never replaces a licensed psychologist, clinical counselor, psychiatrist, or physician.</strong></li>
+              <li><strong>Memory Link does NOT diagnose mental disorders.</strong></li>
+              <li><strong>Memory Link does NOT claim that any user has a psychological condition.</strong></li>
+              <li><strong>Memory Link never replaces a licensed psychologist, clinical counselor, psychiatrist, or physician.</strong></li>
               <li>Educational psychological discussions are never individualized medical or clinical advice.</li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold text-stone-900 text-xs uppercase tracking-wider mb-2">
-              How Athenology Evaluates Information
+              How Memory Link Evaluates Information
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
               <div className="p-2.5 rounded-lg border border-stone-200 bg-white">
@@ -94,7 +94,7 @@ export function SafetyDisclaimerModal({ isOpen, onClose }: SafetyDisclaimerModal
               Scientific Nuance & Non-Simplistic Causality
             </h3>
             <p className="mt-1.5 text-xs text-stone-700 leading-relaxed">
-              Athenology avoids treating every negative experience as automatically or monolithically caused by social media alone. Empirical psychology recognizes critical interacting factors: individual baseline differences, context, content encountered, user motivations (active engagement vs. passive lurking), and algorithmic exposure.
+              Memory Link avoids treating every negative experience as automatically or monolithically caused by social media alone. Empirical psychology recognizes critical interacting factors: individual baseline differences, context, content encountered, user motivations (active engagement vs. passive lurking), and algorithmic exposure.
             </p>
           </div>
 

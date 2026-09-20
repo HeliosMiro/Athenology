@@ -1,5 +1,5 @@
 {
-  "name": "Athenology",
+  "name": "Memory Link",
   "description": "Educational generative AI exploring the social and cognitive psychological consequences of algorithm-driven social media environments.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

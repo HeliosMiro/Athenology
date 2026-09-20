@@ -70,7 +70,7 @@ export function ResearchGroundingModal({
             Grounding Instruction Mandate:
           </p>
           <p>
-            When research materials are entered below, Athenology treats them as the <strong>primary source of truth</strong>, directly cites specific authors or findings, and refrains from inventing unverified claims.
+            When research materials are entered below, Memory Link treats them as the <strong>primary source of truth</strong>, directly cites specific authors or findings, and refrains from inventing unverified claims.
           </p>
         </div>
 

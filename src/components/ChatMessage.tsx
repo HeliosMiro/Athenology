@@ -46,12 +46,12 @@ export function ChatMessage({ message, isLastAssistantMessage, onRetry, isGenera
                 : "bg-stone-300 text-stone-800"
             }`}
           >
-            {isAssistant ? (hasError ? <AlertCircle className="w-3.5 h-3.5" /> : "A") : <User className="w-3.5 h-3.5" />}
+            {isAssistant ? (hasError ? <AlertCircle className="w-3.5 h-3.5" /> : "M") : <User className="w-3.5 h-3.5" />}
           </div>
           <div>
             <div className="flex items-center gap-2">
               <span className="text-xs font-serif font-bold text-stone-900">
-                {isAssistant ? "Athenology" : "You (Student / Inquirer)"}
+                {isAssistant ? "Memory Link" : "You (Student / Inquirer)"}
               </span>
               {isAssistant && (
                 <span className="text-[10px] font-medium px-1.5 py-0.2 rounded bg-amber-50 text-amber-900 border border-amber-200/60">

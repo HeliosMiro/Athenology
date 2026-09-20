@@ -23,11 +23,11 @@ export function Header({
         {/* Brand & Central Inscription */}
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-lg bg-stone-900 text-stone-100 flex items-center justify-center font-serif text-xl font-bold tracking-tight shadow-xs">
-            A
+            M
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-xl font-serif font-bold text-stone-900 tracking-tight">Athenology</h1>
+              <h1 className="text-xl font-serif font-bold text-stone-900 tracking-tight">Memory Link</h1>
               <span className="text-[11px] font-medium tracking-wide uppercase px-2 py-0.5 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
                 Educational AI
               </span>
@@ -114,7 +114,7 @@ export function Header({
             className="inline-flex items-center gap-1 text-[11px] font-medium text-stone-800 hover:text-stone-950 underline underline-offset-2 ml-auto"
           >
             <Sparkles className="w-3 h-3 text-amber-700" />
-            Ask Athenology This Question
+            Ask Memory Link This Question
           </button>
         </div>
       </div>

@@ -92,14 +92,14 @@ export function ApiIntegrationModal({ isOpen, onClose }: ApiIntegrationModalProp
   };
 
   // Ready-to-use Squarespace Embed Code
-  const squarespaceEmbedCode = `<!-- Athenology AI Squarespace Chat Widget -->
-<div id="athenology-widget-container" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 520px; margin: 20px auto; border: 1px solid #e7e5e4; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 20px rgba(0,0,0,0.06); overflow: hidden;">
+  const squarespaceEmbedCode = `<!-- Memory Link AI Squarespace Chat Widget -->
+<div id="memory-link-widget-container" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 520px; margin: 20px auto; border: 1px solid #e7e5e4; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 20px rgba(0,0,0,0.06); overflow: hidden;">
   <!-- Header -->
   <div style="background: #1c1917; color: #f5f5f4; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between;">
     <div style="display: flex; align-items: center; gap: 10px;">
-      <div style="width: 28px; height: 28px; border-radius: 6px; background: #fafaf9; color: #1c1917; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 15px;">A</div>
+      <div style="width: 28px; height: 28px; border-radius: 6px; background: #fafaf9; color: #1c1917; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 15px;">M</div>
       <div>
-        <div style="font-weight: 600; font-size: 15px; letter-spacing: -0.01em;">Athenology</div>
+        <div style="font-weight: 600; font-size: 15px; letter-spacing: -0.01em;">Memory Link</div>
         <div style="font-size: 11px; opacity: 0.8;">Digital Psychology AI</div>
       </div>
     </div>
@@ -107,24 +107,24 @@ export function ApiIntegrationModal({ isOpen, onClose }: ApiIntegrationModalProp
   </div>
 
   <!-- Messages List -->
-  <div id="athenology-messages" style="height: 320px; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; background: #fafaf9;">
+  <div id="memory-link-messages" style="height: 320px; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; background: #fafaf9;">
     <div style="align-self: flex-start; background: #ffffff; color: #292524; padding: 10px 14px; border-radius: 10px; border: 1px solid #e7e5e4; font-size: 13.5px; line-height: 1.5; max-width: 90%;">
-      Hello! I'm <strong>Athenology</strong>. Ask me anything about how social media, recommendation algorithms, and digital environments shape our cognitive and social psychology.
+      Hello! I'm <strong>Memory Link</strong>. Ask me anything about how social media, recommendation algorithms, and digital environments shape our cognitive and social psychology.
     </div>
   </div>
 
   <!-- Input Form -->
-  <form id="athenology-form" style="display: flex; gap: 8px; padding: 12px; background: #ffffff; border-top: 1px solid #e7e5e4;">
+  <form id="memory-link-form" style="display: flex; gap: 8px; padding: 12px; background: #ffffff; border-top: 1px solid #e7e5e4;">
     <input
       type="text"
-      id="athenology-input"
+      id="memory-link-input"
       placeholder="Ask a question about digital psychology..."
       style="flex: 1; padding: 10px 14px; border: 1px solid #d6d3d1; border-radius: 8px; font-size: 13.5px; outline: none;"
       required
     />
     <button
       type="submit"
-      id="athenology-send-btn"
+      id="memory-link-send-btn"
       style="background: #1c1917; color: #ffffff; border: none; padding: 10px 16px; border-radius: 8px; font-weight: 500; font-size: 13.5px; cursor: pointer;"
     >
       Send
@@ -136,10 +136,10 @@ export function ApiIntegrationModal({ isOpen, onClose }: ApiIntegrationModalProp
 (function() {
   var API_ENDPOINT = "${publicApiUrl}";
   var history = [];
-  var messagesContainer = document.getElementById("athenology-messages");
-  var form = document.getElementById("athenology-form");
-  var input = document.getElementById("athenology-input");
-  var sendBtn = document.getElementById("athenology-send-btn");
+  var messagesContainer = document.getElementById("memory-link-messages");
+  var form = document.getElementById("memory-link-form");
+  var input = document.getElementById("memory-link-input");
+  var sendBtn = document.getElementById("memory-link-send-btn");
 
   function appendMsg(role, text) {
     var div = document.createElement("div");
@@ -209,12 +209,12 @@ export function ApiIntegrationModal({ isOpen, onClose }: ApiIntegrationModalProp
 </script>`;
 
   // Javascript Fetch code snippet
-  const fetchSnippet = `// Calling Athenology Web API from JavaScript / Squarespace
+  const fetchSnippet = `// Calling Memory Link Web API from JavaScript / Squarespace
 const API_URL = "${publicApiUrl}";
 
 let conversationHistory = [];
 
-async function askAthenology(userQuestion) {
+async function askMemoryLink(userQuestion) {
   const response = await fetch(API_URL, {
     method: "POST",
     headers: {
@@ -227,7 +227,7 @@ async function askAthenology(userQuestion) {
   });
 
   const data = await response.json();
-  console.log("Athenology Reply:", data.response);
+  console.log("Memory Link Reply:", data.response);
 
   // Update history for follow-up questions
   if (data.conversationHistory) {
@@ -237,7 +237,7 @@ async function askAthenology(userQuestion) {
 }
 
 // Example invocation:
-askAthenology("Why do I compare myself to people on social media?");`;
+askMemoryLink("Why do I compare myself to people on social media?");`;
 
   // cURL snippet
   const curlSnippet = `curl -X POST "${publicApiUrl}" \\
@@ -258,7 +258,7 @@ askAthenology("Why do I compare myself to people on social media?");`;
             </div>
             <div>
               <h2 className="font-serif font-bold text-stone-900 text-base sm:text-lg">
-                Athenology Web API & Squarespace Integration
+                Memory Link Web API & Squarespace Integration
               </h2>
               <p className="text-xs text-stone-500 font-sans">
                 Full-stack JSON API endpoint with CORS enabled for Squarespace websites
@@ -441,7 +441,7 @@ askAthenology("Why do I compare myself to people on social media?");`;
               <div>
                 <h3 className="font-semibold text-stone-900 text-sm">Squarespace 3-Step Setup</h3>
                 <p className="text-xs text-stone-600">
-                  You can embed Athenology on any Squarespace page in under 60 seconds without installing plugins.
+                  You can embed Memory Link on any Squarespace page in under 60 seconds without installing plugins.
                 </p>
               </div>
 
@@ -453,7 +453,7 @@ askAthenology("Why do I compare myself to people on social media?");`;
                     <span>Edit Squarespace Page</span>
                   </div>
                   <p className="text-stone-600 text-[11px]">
-                    Open your Squarespace editor on the page where you want Athenology to appear and click <strong>Add Block</strong>.
+                    Open your Squarespace editor on the page where you want Memory Link to appear and click <strong>Add Block</strong>.
                   </p>
                 </div>
                 <div className="p-3 bg-stone-50 border border-stone-200 rounded-lg space-y-1">
@@ -479,7 +479,7 @@ askAthenology("Why do I compare myself to people on social media?");`;
               {/* Code snippet */}
               <div className="relative border border-stone-200 rounded-lg overflow-hidden bg-stone-900 text-stone-100">
                 <div className="flex items-center justify-between px-4 py-2 bg-stone-950 border-b border-stone-800 text-xs">
-                  <span className="font-mono text-stone-400">squarespace-athenology-embed.html</span>
+                  <span className="font-mono text-stone-400">squarespace-memory-link-embed.html</span>
                   <button
                     onClick={() => copyToClipboard(squarespaceEmbedCode, "squarespaceCode")}
                     className="px-2.5 py-1 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 rounded font-medium inline-flex items-center gap-1 text-xs transition-colors"
@@ -510,7 +510,7 @@ askAthenology("Why do I compare myself to people on social media?");`;
               <div>
                 <h3 className="font-semibold text-stone-900 text-sm">Developer Code Snippets</h3>
                 <p className="text-xs text-stone-600">
-                  Standard HTTP requests for calling Athenology from any frontend, backend, or script.
+                  Standard HTTP requests for calling Memory Link from any frontend, backend, or script.
                 </p>
               </div>
 

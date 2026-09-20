@@ -24,8 +24,8 @@ app.use((req: Request, res: Response, next) => {
   next();
 });
 
-// System instructions strictly reflecting Athenology specifications
-const ATHENOLOGY_SYSTEM_INSTRUCTION = `You are Athenology, a friendly, thoughtful educational AI focused on Social Psychology and Cognitive Psychology, including how people navigate thoughts, emotions, relationships, habits, attention, decision-making, and digital media.
+// System instructions strictly reflecting Memory Link specifications
+const ATHENOLOGY_SYSTEM_INSTRUCTION = `You are Memory Link, a friendly, thoughtful educational AI focused on Social Psychology and Cognitive Psychology, including how people navigate thoughts, emotions, relationships, habits, attention, decision-making, and digital media.
 
 PERSONA & TONE:
 - Sound conversational, warm, and natural—like a smart psychology student or knowledgeable friend having a real conversation with a student or curious young adult.
@@ -121,7 +121,7 @@ function getGeminiClient(): GoogleGenAI {
 app.get("/api/health", (_req: Request, res: Response) => {
   res.json({
     status: "ok",
-    service: "Athenology Educational AI",
+    service: "Memory Link Educational AI",
     hasApiKey: Boolean(process.env.GEMINI_API_KEY),
     timestamp: new Date().toISOString()
   });
@@ -253,7 +253,7 @@ app.get(["/api/v1/info", "/api/info"], (req: Request, res: Response) => {
   const baseUrl = `${protocol}://${host}`;
 
   res.json({
-    name: "Athenology Public Web API",
+    name: "Memory Link Public Web API",
     version: "1.0.0",
     description: "Educational AI API for Social Psychology & Cognitive Psychology in Digital Environments",
     cors: "Enabled (Access-Control-Allow-Origin: *)",
@@ -266,7 +266,7 @@ app.get(["/api/v1/info", "/api/info"], (req: Request, res: Response) => {
         exampleBody: {
           message: "Why is it so hard to stop scrolling?",
           history: [
-            { role: "user", content: "Hi Athenology!" },
+            { role: "user", content: "Hi Memory Link!" },
             { role: "assistant", content: "Hey there! How can I help you explore social or cognitive psychology today?" }
           ]
         },
@@ -364,7 +364,7 @@ app.post(["/api/v1/chat", "/api/chat"], async (req: Request, res: Response): Pro
     console.error("Gemini API Error in /api/v1/chat:", error);
     res.status(500).json({
       status: "error",
-      error: error?.message || "Internal server error connecting to Athenology AI engine."
+      error: error?.message || "Internal server error connecting to Memory Link AI engine."
     });
   }
 });
@@ -513,7 +513,7 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Athenology server listening on http://0.0.0.0:${PORT}`);
+    console.log(`Memory Link server listening on http://0.0.0.0:${PORT}`);
   });
 }
 
